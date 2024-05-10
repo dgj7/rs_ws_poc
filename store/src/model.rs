@@ -2,12 +2,6 @@ use chrono::{DateTime, Utc};
 use serde::{Deserialize, Serialize};
 
 #[derive(Serialize, Deserialize)]
-pub struct Widget {
-    pub(crate) id: i32,
-    pub(crate) name: &'static str,
-}
-
-#[derive(Serialize, Deserialize)]
 pub struct Customer {
     pub id: i32,
     pub create_date: Option<DateTime<Utc>>,
