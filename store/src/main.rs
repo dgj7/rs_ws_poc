@@ -1,10 +1,10 @@
-mod widget;
+mod model;
 mod db;
 
 #[macro_use] extern crate rocket;
 
 use rocket::serde::json::Json;
-use crate::widget::Widget;
+use crate::model::Widget;
 
 #[get("/widgets")]
 fn widgets() -> Json<Vec<Widget>> {
