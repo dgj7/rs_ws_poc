@@ -1,4 +1,5 @@
 mod widget;
+mod db;
 
 #[macro_use] extern crate rocket;
 
